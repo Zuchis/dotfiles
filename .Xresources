@@ -1,0 +1,7 @@
+xterm*termName: xterm-256color
+
+XTerm*locale: true
+
+XTerm*metaSendsEscape: true
+
+XTerm*reverseVideo: on
