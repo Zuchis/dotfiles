@@ -295,6 +295,9 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
      (global-linum-mode)
+     (add-hook 'hack-local-variables-hook (lambda () (setq truncate-lines t)))
+     (with-eval-after-load 'linum
+       (linum-relative-toggle))
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
